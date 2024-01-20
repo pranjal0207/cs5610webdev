@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Screen</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <table>
+    <tbody>
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Commons</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </td>
+            <td valign="top"> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul>
+                    <li><a href="#">Course Details</a></li>
+                    <li><a href="#">Sections</a></li>
+                    <li><a href="#">Navigation</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Feature Options</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </td>
+            <td valign="top">
+                <h2>Course Details</h2>
+                <form>
+                    <div>
+                        <label>Image:</label>
+                        <button type="button">Choose Image</button>
+                    </div><br>
+
+                    <div>
+                        <label for="course-name">Name:</label>
+                        <input type="text" id="course-name" value="CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]">
+                    </div><br>
+
+                    <div>
+                        <label for="course-code">Course Code:</label>
+                        <input type="text" id="course-code" value="CS4550.12631.202410">
+                    </div><br>
+
+                    <div>
+                        <label for="blueprint">Blueprint Course:</label>
+                        <select id="blueprint">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div><br>
+
+                    <div>
+                        <label for="course-template">Course Template:</label>
+                        <input type="checkbox" id="template">
+                        <label for="template"> Enable course as a Course Template</label>
+                    </div><br>
+
+                    <div>
+                        <label for="time-zone">Time Zone:</label>
+                        <select id="time-zone">
+                            <option>Eastern Time (US & Canada) (-05:00/-04:00)</option>
+                        </select>
+                    </div><br>
+
+                    <div>
+                        <label for="sis-id">SIS ID:</label>
+                        <input type="text" id="sis-id" value="CS4550.12631.202410">
+                    </div><br>
+
+                    <div>
+                        <label for="subaccount">Subaccount:</label>
+                        <input type="text" id="subaccount" value="CS Undergrad">
+                    </div><br>
+
+                    <div>
+                        <label for="term">Term:</label>
+                        <input type="text" id="term" value="202410_1 Fall 2023 Semester Full Term">
+                    </div><br>
+
+                    <div>
+                        <label for="participation">Participation:</label>
+                        <select id="participation">
+                            <option>Term</option>
+                            <!-- Other participation options -->
+                        </select>
+                    </div>
+
+                    <p>Course participation is limited to term start and end dates.</p>
+
+                    <div>
+                        <label for="start-date">Start:</label>
+                        <input type="date" id="start-date">
+                    </div><br>
+
+                    <div>
+                        <label for="end-date">End:</label>
+                        <input type="date" id="end-date">
+                    </div><br>
+
+                    <label><input type="checkbox" name="restrict_before_start"> Restrict students from viewing course before term start date</label><br>
+                    <label><input type="checkbox" name="restrict_after_end"> Restrict students from viewing course after term end date</label><br><br>
+
+                    <label for="default-due-time">Default due time:</label>
+                    <select id="default-due-time">
+                        <option>Account default (11:59pm)</option>
+                    </select><br><br>
+
+                    <label for="language">Language:</label>
+                    <select id="language">
+                        <option>Not set (user-configurable, defaults to English)</option>
+                    </select><br><br>
+
+                    <label for="file-storage">File Storage:</label>
+                    <input type="text" id="file-storage" value="10000 megabytes"><br><br>
+
+                    <label><input type="checkbox" name="speed_grader_group"> Launch SpeedGrader Filtered by Student Group</label><br>
+                    
+                    <label><input type="checkbox" name="grading_scheme"> Enable course grading scheme</label><br><br>
+
+                    <label for="license">License:</label>
+                    <select id="license">
+                        <option>Private (Copyrighted)</option>
+                    </select><br><br>
+
+                    <label><input type="checkbox" name="file_copyright"> File Copyright:</label>
+                    <span>Copyright and license information must be provided for files before they are published.</span><br><br>
+
+                    <label for="visibility">Visibility:</label>
+                    <select id="visibility">
+                        <option>Course</option>
+                    </select><br><br>
+
+                    <label><input type="checkbox" name="public_course_index"> Include this course in the public course index</label><br><br>
+
+                    <label for="format">Format:</label>
+                    <select id="format">
+                        <option>On-Campus</option>
+                    </select><br><br>
+
+                    <label><input type="checkbox" name="mastery_paths"> Mastery Paths:</label>
+                    <span>Enable individual learning paths for students based on assessment</span><br><br>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description"></textarea><br><br>
+
+                    <a href="#">more options</a><br><br>
+
+                    <input type="submit" value="Update Course Details">
+                </form>
+
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+    
+</body>
+</html>
