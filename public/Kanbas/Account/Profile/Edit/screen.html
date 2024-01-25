@@ -37,7 +37,7 @@
                     </ul>
                 </td>
                 <td valign="top">
-                    <form action="screen.html" method="post">
+                    <form action="../screen.html" method="get">
                         <table>
                             <tr>
                                 <td>Name:*</td>
@@ -71,8 +71,11 @@
                         </ul>
                         <button type="button">Add another link</button>
                         <br><br>
-                        <button type="submit" onclick="window.location.href='../screen.html';">Save Profile</button>
-                        <button type="button" onclick="window.location.href='../screen.html';">Cancel Editing</button>
+                        <!-- <button type="submit" onclick="window.location.href='../screen.html';">Save Profile</button>
+                        <button type="button" onclick="window.location.href='../screen.html';">Cancel Editing</button> -->
+
+                        <button type="button" onclick="location.href='../screen.html'">Cancel Editing</button>
+                        <input type="submit" value="Save Profile">
                     </form>
                 </td>
             </tr>
