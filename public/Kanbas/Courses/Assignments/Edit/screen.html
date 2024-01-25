@@ -49,7 +49,7 @@
             </td>
             <td valign="top">
                 <div>
-                    <form>
+                    <form action="../screen.html" method = "get">
                         <select>
                             <option>Speed Grader</option>
                         </select>
@@ -96,7 +96,6 @@
                 
                         <select id="display-grade">
                             <option>Percentage</option>
-                            <!-- Add other display options here -->
                         </select>
                 
                         <br><br>
@@ -133,7 +132,6 @@
                 
                         <select id="assign-to">
                             <option>Everyone</option>
-                            <!-- Add other assignee options here -->
                         </select>
                 
                         <br> <br>
@@ -163,12 +161,16 @@
                         <br> <br>
                 
                         <div class="button-container">
-                            <button type="button" onclick="window.location.href='../screen';">Cancel</button>
-                            <button type="submit" onclick="window.location.href='../screen';">Save</button>
+                            <button type="button" onclick="location.href='../screen.html'">Cancel</button>
                         </div>
+                        <div class="button-container">
+                            <input type="submit" value="Save">
+                        </div>
+
+                        <!-- <button><a href="../../Assignments/screen.html"></a>Save</button> -->
                     </form>
                 </div>
-            </td>
+            </td>   
         </tr>
     </tbody>
     </table>
