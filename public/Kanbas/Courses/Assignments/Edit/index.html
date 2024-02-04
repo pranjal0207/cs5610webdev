@@ -1,132 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assignment Edit</title>
-</head>
-<body>
-
-<div>
-    <form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Edit</title>
+  </head>
+  <body>
+    <div>
+      <form>
         <select>
-            <option>Speed Grader</option>
+          <option>Speed Grader</option>
         </select>
 
-        <hr>
+        <hr />
 
         <label for="assignment-name">Assignment Name</label>
 
-        <br>
+        <br />
 
-        <input type="text" id="assignment-name" value="A1 - ENV + HTML">
+        <input type="text" id="assignment-name" value="A1 - ENV + HTML" />
 
-        <br><br>
+        <br /><br />
 
         <label for="assignment-description">Assignment Description</label>
 
-        <br>
+        <br />
 
-        <textarea id="assignment-description">This is the assignment description.</textarea>
+        <textarea id="assignment-description">
+This is the assignment description.</textarea
+        >
 
-        <br><br>
+        <br /><br />
 
         <label for="points">Points</label>
 
-        <br>
+        <br />
 
-        <input type="text" id="points" value="100">
+        <input type="text" id="points" value="100" />
 
-        <br><br>
+        <br /><br />
 
         <label for="assignment-group">Assignment Group</label>
 
-        <br>
+        <br />
 
         <select id="assignment-group">
-            <option>ASSIGNMENTS</option>
+          <option>ASSIGNMENTS</option>
         </select>
 
-        <br><br>
+        <br /><br />
 
         <label for="display-grade">Display Grade as</label>
 
-        <br>
+        <br />
 
         <select id="display-grade">
-            <option>Percentage</option>
-            <!-- Add other display options here -->
+          <option>Percentage</option>
+          <!-- Add other display options here -->
         </select>
 
-        <br><br>
+        <br /><br />
 
         <label for="submission-type">Submission Type</label>
 
-        <br>
+        <br />
 
         <select id="submission-type">
-            <option>Online</option>
+          <option>Online</option>
         </select>
 
-        <br><br>
+        <br /><br />
 
         <label for="online-entry-type">Online Entry Options</label>
-        
-        <br>
-        
-        <label><input type="checkbox"> Text Entry</label><br>
-        <label><input type="checkbox"> Website URL</label><br>
-        <label><input type="checkbox"> Media Recordings</label><br>
-        <label><input type="checkbox"> Student Annotation</label><br>
-        <label><input type="checkbox"> File Uploads</label>
 
-        <br> <br>
-        
+        <br />
+
+        <label><input type="checkbox" /> Text Entry</label><br />
+        <label><input type="checkbox" /> Website URL</label><br />
+        <label><input type="checkbox" /> Media Recordings</label><br />
+        <label><input type="checkbox" /> Student Annotation</label><br />
+        <label><input type="checkbox" /> File Uploads</label>
+
+        <br />
+        <br />
+
         <label for="assign-to">Assign</label>
-                
-        <br>
 
-        <label for="assign-to">Assign to</label> 
+        <br />
 
-        <br>
+        <label for="assign-to">Assign to</label>
+
+        <br />
 
         <select id="assign-to">
-            <option>Everyone</option>
-            <!-- Add other assignee options here -->
+          <option>Everyone</option>
+          <!-- Add other assignee options here -->
         </select>
 
-        <br> <br>
+        <br />
+        <br />
 
         <label for="due-date">Due</label>
 
-        <br>
+        <br />
 
-        <input type="date" id="due-date" value="2021-01-01">
+        <input type="date" id="due-date" value="2021-01-01" />
 
-        <br> <br>
+        <br />
+        <br />
 
         <label for="available-from">Available from</label>
 
-        <br>
+        <br />
 
-        <input type="date" id="available-from" value="2021-01-01">
+        <input type="date" id="available-from" value="2021-01-01" />
 
-        <br> <br>
+        <br />
+        <br />
 
         <label for="available-until">Until</label>
 
-        <br>
+        <br />
 
-        <input type="date" id="available-until" value="2021-01-01">
+        <input type="date" id="available-until" value="2021-01-01" />
 
-        <br> <br>
+        <br />
+        <br />
 
         <div class="button-container">
-            <button type="button">Cancel</button>
-            <button type="submit">Save</button>
+          <button type="button">Cancel</button>
+          <button type="submit">Save</button>
         </div>
-    </form>
-</div>
-
-</body>
+      </form>
+    </div>
+  </body>
 </html>

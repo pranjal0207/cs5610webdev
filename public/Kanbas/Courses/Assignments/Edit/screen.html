@@ -1,176 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assignment Edit Screen</title>
-<style>
-    
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Edit Screen</title>
+    <style></style>
+  </head>
+  <body>
     <table>
-    <tbody>
+      <tbody>
         <tr>
-            <td valign="top">
-                <ul>
-                    <li><a href="../../../Account/Profile/screen.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../../../Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td valign="top"> 
-                <ul>
-                    <li><a href="../../Home/screen.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="../../Assignments/screen.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../../Grades/screen.html">Grades</a></li>
-                    <li><a href="">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="../../Settings/CourseDetails/screen.html">Settings</a></li>
-                </ul>
-            </td>
-            <td valign="top">
-                <div>
-                    <form action="../screen.html" method = "get">
-                        <select>
-                            <option>Speed Grader</option>
-                        </select>
-                
-                        <hr>
-                
-                        <label for="assignment-name">Assignment Name</label>
-                
-                        <br>
-                
-                        <input type="text" id="assignment-name" value="A1 - ENV + HTML">
-                
-                        <br><br>
-                
-                        <label for="assignment-description">Assignment Description</label>
-                
-                        <br>
-                
-                        <textarea id="assignment-description">This is the assignment description.</textarea>
-                
-                        <br><br>
-                
-                        <label for="points">Points</label>
-                
-                        <br>
-                
-                        <input type="text" id="points" value="100">
-                
-                        <br><br>
-                
-                        <label for="assignment-group">Assignment Group</label>
-                
-                        <br>
-                
-                        <select id="assignment-group">
-                            <option>ASSIGNMENTS</option>
-                        </select>
-                
-                        <br><br>
-                
-                        <label for="display-grade">Display Grade as</label>
-                
-                        <br>
-                
-                        <select id="display-grade">
-                            <option>Percentage</option>
-                        </select>
-                
-                        <br><br>
-                
-                        <label for="submission-type">Submission Type</label>
-                
-                        <br>
-                
-                        <select id="submission-type">
-                            <option>Online</option>
-                        </select>
-                
-                        <br><br>
-                
-                        <label for="online-entry-type">Online Entry Options</label>
-                        
-                        <br>
-                        
-                        <label><input type="checkbox"> Text Entry</label><br>
-                        <label><input type="checkbox"> Website URL</label><br>
-                        <label><input type="checkbox"> Media Recordings</label><br>
-                        <label><input type="checkbox"> Student Annotation</label><br>
-                        <label><input type="checkbox"> File Uploads</label>
-                
-                        <br> <br>
-                        
-                        <label for="assign-to">Assign</label>
-                
-                        <br>
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="../../../Account/Profile/screen.html">Account</a>
+              </li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="../../../Courses/Home/screen.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li><a href="../../Home/screen.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li><a href="../../Assignments/screen.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="../../Grades/screen.html">Grades</a></li>
+              <li><a href="">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li>
+                <a href="../../Settings/CourseDetails/screen.html">Settings</a>
+              </li>
+            </ul>
+          </td>
+          <td valign="top">
+            <div>
+              <form action="../screen.html" method="get">
+                <select>
+                  <option>Speed Grader</option>
+                </select>
 
-                        <label for="assign-to">Assign to</label> 
+                <hr />
 
-                        <br>
-                
-                        <select id="assign-to">
-                            <option>Everyone</option>
-                        </select>
-                
-                        <br> <br>
-                
-                        <label for="due-date">Due</label>
-                
-                        <br>
-                
-                        <input type="date" id="due-date" value="2021-01-01">
-                
-                        <br> <br>
-                
-                        <label for="available-from">Available from</label>
-                
-                        <br>
-                
-                        <input type="date" id="available-from" value="2021-01-01">
-                
-                        <br> <br>
-                
-                        <label for="available-until">Until</label>
-                
-                        <br>
-                
-                        <input type="date" id="available-until" value="2021-01-01">
-                
-                        <br> <br>
-                
-                        <div class="button-container">
-                            <button type="button" onclick="location.href='../screen.html'">Cancel</button>
-                            <input type="submit" value="Save">
-                        </div>
-                    </form>
+                <label for="assignment-name">Assignment Name</label>
+
+                <br />
+
+                <input
+                  type="text"
+                  id="assignment-name"
+                  value="A1 - ENV + HTML"
+                />
+
+                <br /><br />
+
+                <label for="assignment-description"
+                  >Assignment Description</label
+                >
+
+                <br />
+
+                <textarea id="assignment-description">
+This is the assignment description.</textarea
+                >
+
+                <br /><br />
+
+                <label for="points">Points</label>
+
+                <br />
+
+                <input type="text" id="points" value="100" />
+
+                <br /><br />
+
+                <label for="assignment-group">Assignment Group</label>
+
+                <br />
+
+                <select id="assignment-group">
+                  <option>ASSIGNMENTS</option>
+                </select>
+
+                <br /><br />
+
+                <label for="display-grade">Display Grade as</label>
+
+                <br />
+
+                <select id="display-grade">
+                  <option>Percentage</option>
+                </select>
+
+                <br /><br />
+
+                <label for="submission-type">Submission Type</label>
+
+                <br />
+
+                <select id="submission-type">
+                  <option>Online</option>
+                </select>
+
+                <br /><br />
+
+                <label for="online-entry-type">Online Entry Options</label>
+
+                <br />
+
+                <label><input type="checkbox" /> Text Entry</label><br />
+                <label><input type="checkbox" /> Website URL</label><br />
+                <label><input type="checkbox" /> Media Recordings</label><br />
+                <label><input type="checkbox" /> Student Annotation</label
+                ><br />
+                <label><input type="checkbox" /> File Uploads</label>
+
+                <br />
+                <br />
+
+                <label for="assign-to">Assign</label>
+
+                <br />
+
+                <label for="assign-to">Assign to</label>
+
+                <br />
+
+                <select id="assign-to">
+                  <option>Everyone</option>
+                </select>
+
+                <br />
+                <br />
+
+                <label for="due-date">Due</label>
+
+                <br />
+
+                <input type="date" id="due-date" value="2021-01-01" />
+
+                <br />
+                <br />
+
+                <label for="available-from">Available from</label>
+
+                <br />
+
+                <input type="date" id="available-from" value="2021-01-01" />
+
+                <br />
+                <br />
+
+                <label for="available-until">Until</label>
+
+                <br />
+
+                <input type="date" id="available-until" value="2021-01-01" />
+
+                <br />
+                <br />
+
+                <div class="button-container">
+                  <button
+                    type="button"
+                    onclick="location.href='../screen.html'"
+                  >
+                    Cancel
+                  </button>
+                  <input type="submit" value="Save" />
                 </div>
-            </td>   
+              </form>
+            </div>
+          </td>
         </tr>
-    </tbody>
+      </tbody>
     </table>
-
-    
-</body>
+  </body>
 </html>

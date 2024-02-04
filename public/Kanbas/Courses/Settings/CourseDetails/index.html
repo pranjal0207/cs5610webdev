@@ -1,136 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Course Details</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details</title>
+  </head>
+  <body>
+    <h2>Course Details</h2>
 
-<h2>Course Details</h2>
-
-<form>
-    <div>
+    <form>
+      <div>
         <label>Image:</label>
         <button type="button">Choose Image</button>
-    </div><br>
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="course-name">Name:</label>
-        <input type="text" id="course-name" value="CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]">
-    </div><br>
+        <input
+          type="text"
+          id="course-name"
+          value="CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]"
+        />
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="course-code">Course Code:</label>
-        <input type="text" id="course-code" value="CS4550.12631.202410">
-    </div><br>
+        <input type="text" id="course-code" value="CS4550.12631.202410" />
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="blueprint">Blueprint Course:</label>
         <select id="blueprint">
-            <option>Yes</option>
-            <option>No</option>
+          <option>Yes</option>
+          <option>No</option>
         </select>
-    </div><br>
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="course-template">Course Template:</label>
-        <input type="checkbox" id="template">
+        <input type="checkbox" id="template" />
         <label for="template"> Enable course as a Course Template</label>
-    </div><br>
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="time-zone">Time Zone:</label>
         <select id="time-zone">
-            <option>Eastern Time (US & Canada) (-05:00/-04:00)</option>
+          <option>Eastern Time (US & Canada) (-05:00/-04:00)</option>
         </select>
-    </div><br>
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="sis-id">SIS ID:</label>
-        <input type="text" id="sis-id" value="CS4550.12631.202410">
-    </div><br>
+        <input type="text" id="sis-id" value="CS4550.12631.202410" />
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="subaccount">Subaccount:</label>
-        <input type="text" id="subaccount" value="CS Undergrad">
-    </div><br>
+        <input type="text" id="subaccount" value="CS Undergrad" />
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="term">Term:</label>
-        <input type="text" id="term" value="202410_1 Fall 2023 Semester Full Term">
-    </div><br>
+        <input
+          type="text"
+          id="term"
+          value="202410_1 Fall 2023 Semester Full Term"
+        />
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="participation">Participation:</label>
         <select id="participation">
-            <option>Term</option>
-            <!-- Other participation options -->
+          <option>Term</option>
+          <!-- Other participation options -->
         </select>
-    </div>
+      </div>
 
-    <p>Course participation is limited to term start and end dates.</p>
+      <p>Course participation is limited to term start and end dates.</p>
 
-    <div>
+      <div>
         <label for="start-date">Start:</label>
-        <input type="date" id="start-date">
-    </div><br>
+        <input type="date" id="start-date" />
+      </div>
+      <br />
 
-    <div>
+      <div>
         <label for="end-date">End:</label>
-        <input type="date" id="end-date">
-    </div><br>
+        <input type="date" id="end-date" />
+      </div>
+      <br />
 
-    <label><input type="checkbox" name="restrict_before_start"> Restrict students from viewing course before term start date</label><br>
-    <label><input type="checkbox" name="restrict_after_end"> Restrict students from viewing course after term end date</label><br><br>
+      <label
+        ><input type="checkbox" name="restrict_before_start" /> Restrict
+        students from viewing course before term start date</label
+      ><br />
+      <label
+        ><input type="checkbox" name="restrict_after_end" /> Restrict students
+        from viewing course after term end date</label
+      ><br /><br />
 
-    <label for="default-due-time">Default due time:</label>
-    <select id="default-due-time">
-        <option>Account default (11:59pm)</option>
-    </select><br><br>
+      <label for="default-due-time">Default due time:</label>
+      <select id="default-due-time">
+        <option>Account default (11:59pm)</option></select
+      ><br /><br />
 
-    <label for="language">Language:</label>
-    <select id="language">
-        <option>Not set (user-configurable, defaults to English)</option>
-    </select><br><br>
+      <label for="language">Language:</label>
+      <select id="language">
+        <option>
+          Not set (user-configurable, defaults to English)
+        </option></select
+      ><br /><br />
 
-    <label for="file-storage">File Storage:</label>
-    <input type="text" id="file-storage" value="10000 megabytes"><br><br>
+      <label for="file-storage">File Storage:</label>
+      <input
+        type="text"
+        id="file-storage"
+        value="10000 megabytes"
+      /><br /><br />
 
-    <label><input type="checkbox" name="speed_grader_group"> Launch SpeedGrader Filtered by Student Group</label><br>
-    
-    <label><input type="checkbox" name="grading_scheme"> Enable course grading scheme</label><br><br>
+      <label
+        ><input type="checkbox" name="speed_grader_group" /> Launch SpeedGrader
+        Filtered by Student Group</label
+      ><br />
 
-    <label for="license">License:</label>
-    <select id="license">
-        <option>Private (Copyrighted)</option>
-    </select><br><br>
+      <label
+        ><input type="checkbox" name="grading_scheme" /> Enable course grading
+        scheme</label
+      ><br /><br />
 
-    <label><input type="checkbox" name="file_copyright"> File Copyright:</label>
-    <span>Copyright and license information must be provided for files before they are published.</span><br><br>
+      <label for="license">License:</label>
+      <select id="license">
+        <option>Private (Copyrighted)</option></select
+      ><br /><br />
 
-    <label for="visibility">Visibility:</label>
-    <select id="visibility">
-        <option>Course</option>
-    </select><br><br>
+      <label
+        ><input type="checkbox" name="file_copyright" /> File Copyright:</label
+      >
+      <span
+        >Copyright and license information must be provided for files before
+        they are published.</span
+      ><br /><br />
 
-    <label><input type="checkbox" name="public_course_index"> Include this course in the public course index</label><br><br>
+      <label for="visibility">Visibility:</label>
+      <select id="visibility">
+        <option>Course</option></select
+      ><br /><br />
 
-    <label for="format">Format:</label>
-    <select id="format">
-        <option>On-Campus</option>
-    </select><br><br>
+      <label
+        ><input type="checkbox" name="public_course_index" /> Include this
+        course in the public course index</label
+      ><br /><br />
 
-    <label><input type="checkbox" name="mastery_paths"> Mastery Paths:</label>
-    <span>Enable individual learning paths for students based on assessment</span><br><br>
+      <label for="format">Format:</label>
+      <select id="format">
+        <option>On-Campus</option></select
+      ><br /><br />
 
-    <label for="description">Description:</label>
-    <textarea id="description"></textarea><br><br>
+      <label
+        ><input type="checkbox" name="mastery_paths" /> Mastery Paths:</label
+      >
+      <span
+        >Enable individual learning paths for students based on assessment</span
+      ><br /><br />
 
-    <a href="#">more options</a><br><br>
+      <label for="description">Description:</label>
+      <textarea id="description"></textarea><br /><br />
 
-    <input type="submit" value="Update Course Details">
-</form>
+      <a href="#">more options</a><br /><br />
 
-</body>
+      <input type="submit" value="Update Course Details" />
+    </form>
+  </body>
 </html>
