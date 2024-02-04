@@ -1,0 +1,24 @@
+.course-top-navigation {
+    overflow: hidden;
+    padding: 10px 15px;
+    font-size: 25px;
+}
+
+.course-top-navigation a {
+    color: red;
+    text-decoration: none;
+}
+
+.course-top-navigation a i {
+    color: red;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.course-top-navigation a:hover {
+    text-decoration: underline;
+}
+
+.course-top-navigation hr {
+    margin-top: 10px;
+}

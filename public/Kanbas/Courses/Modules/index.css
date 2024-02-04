@@ -1,0 +1,87 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li > ul > li > ul > li {
+  padding: 5px;
+  padding-left: 35px;
+  border-top: 1px solid gray !important;
+  
+}
+
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.module-item-link{
+  color: green;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.wd-modules > li > ul > li > ul > li a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-modules > li > ul > li > ul > li a i {
+  color: red;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.wd-modules > li > ul > li > ul > li a:hover {
+  text-decoration: underline;
+}
+
+.top-button-bar {
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-button-bar > a {
+  margin:0 4px 0 4px; 
+  padding: 5px;
+  border: 1px solid black;
+  display: inline-flex  ;
+  background-color: #e7e7e7;
+  color: black;
+  text-decoration: none;
+  align-items: center; /* Vertically center the items */
+  justify-content: center;
+}
+
+.top-button-bar > a.red {
+  background-color: red;
+}
+
+.top-button-bar > a > i {
+  padding-right : 6px
+}
