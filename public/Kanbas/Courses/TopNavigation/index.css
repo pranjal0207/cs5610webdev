@@ -1,44 +1,44 @@
 .course-top-navigation {
-    overflow: hidden;
-    padding: 10px 15px;
-    font-size: 25px;
-    margin-left: 80px;
+  overflow: hidden;
+  padding: 10px 15px;
+  font-size: 25px;
+  margin-left: 80px;
 }
 
 .course-top-navigation a {
-    color: red;
-    text-decoration: none;
+  color: red;
+  text-decoration: none;
 }
 
 .course-top-navigation a i {
-    color: red;
-    text-decoration: none;
-    margin-right: 20px;
+  color: red;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .course-top-navigation a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .course-top-navigation hr {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.course-top-navigation a.side{
-    margin:0 4px 0 4px; 
-    padding: 5px;
-    border: 1px solid black;
-    display: inline-flex  ;
-    background-color: #e7e7e7;
-    color: black;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
+.course-top-navigation a.side {
+  margin: 0 4px 0 4px;
+  padding: 5px;
+  border: 1px solid black;
+  display: inline-flex;
+  background-color: #e7e7e7;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
 }
 
-.course-top-navigation a.side i{
-    color: black;
-    text-decoration: none;
-    margin-right: 20px;
+.course-top-navigation a.side i {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
 }

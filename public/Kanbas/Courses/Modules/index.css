@@ -31,15 +31,13 @@
   padding: 5px;
   padding-left: 35px;
   border-top: 1px solid gray !important;
-  
 }
-
 
 .wd-modules > li {
   margin-bottom: 20px;
 }
 
-.module-item-link{
+.module-item-link {
   color: green;
   padding-left: 15px;
   padding-right: 5px;
@@ -62,15 +60,15 @@
 
 .top-button-bar {
   padding-right: 20px;
-    /* display: flex;
+  /* display: flex;
     justify-content: flex-end; */
 }
 
 .top-button-bar > a {
-  margin:0 4px 0 4px; 
+  margin: 0 4px 0 4px;
   padding: 5px;
   border: 1px solid black;
-  display: inline-flex  ;
+  display: inline-flex;
   background-color: #e7e7e7;
   color: black;
   text-decoration: none;
@@ -83,5 +81,5 @@
 }
 
 .top-button-bar > a > i {
-  padding-right : 6px
+  padding-right: 6px;
 }
