@@ -4,12 +4,9 @@
 }
 
 .card-container .col {
-    /* Set a maximum width for each card */
     max-width: 200px;
-    /* Center the card in the column */
     margin: 0 auto;
-    /* Add bottom margin to each column to create space between rows */
-    margin-bottom: 30px; /* Adjust the value as needed */
+    margin-bottom: 30px; 
   }
   
   .card {
