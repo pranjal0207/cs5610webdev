@@ -1,166 +1,345 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Screen</title>
-    <style></style>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/TopNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
   </head>
   <body>
     <table>
       <tbody>
         <tr>
-          <td valign="top">
-            <ul>
-              <li><a href="../../Account/Profile/screen.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../../Courses/Home/screen.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li><a href="../Home/screen.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="../Assignments/screen.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="../Grades/screen.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
+          <td valign = "top">
+            <ul class="wd-kanbas-navigation">
               <li>
-                <a href="../../Courses/Settings/CourseNavigation/screen.html"
-                  >Settings</a
-                >
+                  <a href="http://northeastern.edu"><img src="/images/NEUImage.png" alt="description of image" width="26" height="20"></a>
+              </li>
+              <li>
+                  <a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i>Account</a>
+              </li>
+              <li class="wd-active">
+                  <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i> Dashboard</a>
+              </li>
+              <li>
+                  <a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a></li>
+              <li>
+                  <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-inbox"></i> <br> Inbox</a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-clock-o"></i> History</a>
+              </li>
+              <li>
+                  <a href="#">Studio</a>
+              </li>
+              <li>
+                  <a href="#">Commons</a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-question"></i> <br> Help</a>
               </li>
             </ul>
           </td>
-          <td valign="top">
+          <td width = "100%">
+            <div class = "course-top-navigation">
+              <a href="#"><i class="fa fa-bars"></i></a>
+              <a href="#">CS5610.36915.202430</a>
+              > Grades
+              <hr>
+            </div>
+        
             <table>
-              <tr>
-                <td>
-                  <div style="display: flex">
-                    <select>
-                      <option>Gradebook</option>
-                      <option>Change Gradebook View</option>
-                      <option>Traditional Gradebook</option>
-                      <option>Individual Gradebook</option>
-                    </select>
-                    <button>Import</button>
-                    <select>
-                      <option>Export</option>
-                      <option>Export Current Gradebook View</option>
-                      <option>Export Entire Gradebook</option>
-                    </select>
-                    <button>Configure</button>
+              <tbody>
+                <tr>
+                  <td valign = "top">
+                    <ul class="wd-navigation">
+                      <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                      <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                      <li><a href="#">Piazza</a></li>
+                      <li><a href="#">Zoom Meetings</a></li>
+                      <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                      <li><a href="#">Quizzes</a></li>
+                      <li   class="wd-active" ><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                      <li><a href="#">People</a></li>
+                      <li><a href="#">Panopto Video</a></li>
+                      <li><a href="#">Discussions</a></li>
+                      <li><a href="#">Announcements</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Rubrics</a></li>
+                      <li><a href="#">Outcomes</a></li>
+                      <li><a href="#">Collaborations</a></li>
+                      <li><a href="#">Syllabus</a></li>
+                      <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
+                    </ul>
+                  </td>
+                  <td valign = "top" width="100%">
+                    <div class = "top-button-bar float-end">
+                      <a href=""> <i class="fa fa-sign-in" aria-hidden="true"></i> Import</a>
+                
+                      <a href=""> <i class="fa fa-sign-out" aria-hidden="true"></i> Export <i class="fa fa-angle-down"></i> </a>
+                
+                      <a href=""><i class="fa fa-gear"></i></a>
+                      
+                    </div><br>
+                    <hr>
+
+                    <div class="row mb-3">
+                      <div class="col-sm-6">
+                        <div class="row mb-3">
+                          <div class="col text-start">
+                            <label for="assignment-group" class="form-label mb-0">Student Names</label>
+                          </div>  
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col">
+                            <div class = "top-search">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td valign="middle">
+                                      <i class="fa fa-search"></i> 
+                                    </td>
+                                    <td width = 100%>
+                                      <input type="text" class="form-control no-border" placeholder="Search Assignments">  
+                                    </td>
+                                    <td>
+                                      <i class="fa fa-angle-down"></i>
+                                    </td>
+
+                                </tbody>
+                              </table>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row mb-3">
+                          <div class="col text-start">
+                            <label for="assignment-group" class="form-label mb-0">Assignment Names</label>
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col">
+                            <div class = "top-search">
+                              <!-- <div class = "row">
+                                <div class="col-1">
+                                  <i class="fa fa-search"></i> 
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control no-border" placeholder="Search Assignments">  
+                                </div>
+                              </div> -->
+
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td valign="middle">
+                                      <i class="fa fa-search"></i> 
+                                    </td>
+                                    <td width = 100%>
+                                      <input type="text" class="form-control no-border" placeholder="Search Assignments">  
+                                    </td>
+                                    <td>
+                                      <i class="fa fa-angle-down"></i>
+                                    </td>
+
+                                </tbody>
+                              </table>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col filter-button">
+                        <a href="#"><i class="fa fa-filter"></i> Apply Filters</a>
+                      </div>
+                    </div>
+                    
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered">
+                          <thead>
+                              <tr>
+                                  <th> Student Name </th>
+                                  <th width = "15%">A1 SETUP</th>
+                                  <td width = "15%">A2 HTML</th>
+                                  <td width = "15%">A3 CSS</th>
+                                  <td width = "15%">A4 JAVASCRIPT</th>
+                                  <td width = "15%">A4 REACT</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Some Name 1</td>
+                                  <td>100%</td>
+                                  <td>100%</td>
+                                  <td>100%</td>
+                                  <td>100%</td>
+                                  <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 2</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 3</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 4</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td><input type="number" class="form-control" placeholder="100%"></td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 5</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 6</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 7</td>
+                                <td><input type="number" class="form-control" placeholder="100%"></td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 8</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 9</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 10</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 11</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 12</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 13</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td><input type="number" class="form-control" placeholder="100%"></td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 14</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 15</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 16</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 17</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                              <tr>
+                                <td>Some Name 18</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                              </tr>
+                          </tbody>
+                      </table>
                   </div>
-
-                  <!-- Student Name filter -->
-                  <h3>Student Names</h3>
-                  <input type="text" placeholder="Search Students" />
-
-                  <!-- Assignment Name filter -->
-                  <h3>Assignment Names</h3>
-                  <input type="text" placeholder="Search Assignments" />
-
-                  <br />
-                  <br />
-
-                  <!-- Apply Filters button -->
-                  <button>Apply Filters</button>
-
-                  <br /><br />
-
-                  <!-- Grades table -->
-                  <table border="1" style="text-align: center">
-                    <tr>
-                      <th>Student Name</th>
-                      <th>A1 Setup <br />Out of 100</th>
-                      <th>A2 HTML <br />Out of 100</th>
-                      <th>A3 CSS <br />Out of 100</th>
-                      <th>A4 Bootstrap <br />Out of 100</th>
-                    </tr>
-                    <tr>
-                      <td>Amy Santiago</td>
-                      <td>95</td>
-                      <td>
-                        <input
-                          type="number"
-                          max="100"
-                          min="0"
-                          value="97"
-                          style="width: 70%; text-align: center"
-                        />
-                      </td>
-                      <td>98</td>
-                      <td>94</td>
-                    </tr>
-                    <tr>
-                      <td>Jake Peralta</td>
-                      <td>74</td>
-                      <td>
-                        <input
-                          type="number"
-                          max="100"
-                          min="0"
-                          value="90"
-                          style="width: 70%; text-align: center"
-                        />
-                      </td>
-                      <td>79</td>
-                      <td>82</td>
-                    </tr>
-                    <tr>
-                      <td>Rosa Diaz</td>
-                      <td>97</td>
-                      <td>
-                        <input
-                          type="number"
-                          max="100"
-                          min="0"
-                          value="78"
-                          style="width: 70%; text-align: center"
-                        />
-                      </td>
-                      <td>75</td>
-                      <td>88</td>
-                    </tr>
-                    <tr>
-                      <td>Ray Holt</td>
-                      <td>81</td>
-                      <td>76</td>
-                      <td>90</td>
-                      <td>
-                        <input
-                          type="number"
-                          max="100"
-                          min="0"
-                          value="85"
-                          style="width: 70%; text-align: center"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+                  
+                  </div>
+                  </td>
+                  </tr>
+              </tbody>
             </table>
           </td>
         </tr>
       </tbody>
     </table>
+          </tr>
+      </tbody>
+    </table>
   </body>
 </html>
+
