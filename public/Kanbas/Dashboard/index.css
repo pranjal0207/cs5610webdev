@@ -1,0 +1,27 @@
+.spacing {
+    margin-left: 10%;
+    max-width:70%;
+}
+
+.card-container .col {
+    /* Set a maximum width for each card */
+    max-width: 200px;
+    /* Center the card in the column */
+    margin: 0 auto;
+    /* Add bottom margin to each column to create space between rows */
+    margin-bottom: 30px; /* Adjust the value as needed */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+  }
+  
+  
+
+@media (max-width: 699px) {
+    .wd-kanbas-navigation {
+      display: none;
+    }
+  }
