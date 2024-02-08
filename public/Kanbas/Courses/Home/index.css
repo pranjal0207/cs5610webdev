@@ -85,6 +85,10 @@
 	.top-responsive-bar {
 		display: none;
 	}
+
+	.left {
+		display: none;
+	}
 }
 
 .top-responsive-bar > div > a{
