@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { FaCheckCircle, FaEllipsisV, FaPlusCircle, FaPlus, FaChevronDown } from "react-icons/fa";
+import { FaCheckCircle, FaEllipsisV, FaPlusCircle, FaPlus, FaChevronDown, FaBook } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
+import { Col, Row } from 'react-bootstrap';
 
 function Assignments() {
   const { courseId } = useParams();
@@ -20,36 +21,36 @@ function Assignments() {
     <>
       <div className="row top-bar">
         <div className="col-4">
-          <input type="text" className="form-control" placeholder="Search for Assignment" />
+          <input type="text" className="form-control" placeholder="Search for Assignment" onChange={handleChange}/>
         </div>
         <div className="col top-button-bar d-flex justify-content-end">
-          <a href="">Collapse All</a>
-  
-          <a href="">View Progress</a>
+          <a> Group </a>
     
-          <a href="">  <FaCheckCircle className="text-success" /> Publish All <FaChevronDown /> </a>
+          <a className = "red" ><FaPlus /> Assignment </a>
     
-          <a className = "red" href=""><FaPlus /> Module</a>
-    
-          <a href=""><FaEllipsisV className="me-2 custom" /> </a>
+          <a> <FaEllipsisV className="me-2 custom" /> </a>
         </div>
       </div>
 
       <hr></hr>
       
-      <ul className="list-group wd-modules">
+      <ul className="list-group wd-assignments">
         <li className="list-group-item">
           <div>
             <FaEllipsisV className="me-2" /> ASSIGNMENTS
-            <span className="float-end">
-              <FaCheckCircle className="text-success" />
-              <FaPlusCircle className="ms-2" /><FaEllipsisV className="ms-2" />
-            </span>
+              <span className="float-end">
+                <span className='percent-box'>
+                  40% of total
+                </span>
+                  <FaCheckCircle className="text-success" />
+                  <FaPlusCircle className="ms-2" /><FaEllipsisV className="ms-2" />
+              </span>
           </div>
           <ul className="list-group">
             {assignmentList.map((assignment) => (
               <li className="list-group-item">
                 <FaEllipsisV className="me-2" />
+                <FaBook className="me-2"/>
                 <Link
                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>
                 <span className="float-end">
