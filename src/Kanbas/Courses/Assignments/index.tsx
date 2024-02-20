@@ -4,7 +4,6 @@ import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-import { Col, Row } from 'react-bootstrap';
 
 function Assignments() {
   const { courseId } = useParams();
