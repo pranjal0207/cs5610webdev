@@ -4,5 +4,6 @@ import enrollments from './enrollments.json';
 import grades from './grades.json';
 import users from './users.json'
 import modules from './modules.json'
+import db from './db.json'
 
-export {  courses , assignments, enrollments, grades, users, modules };
+export {  courses , assignments, enrollments, grades, users, modules, db };
