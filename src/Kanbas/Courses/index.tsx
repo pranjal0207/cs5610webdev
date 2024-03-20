@@ -1,4 +1,4 @@
-import { courses } from "../Database";
+// import { courses } from "../Database";
 import { Navigate, Route, Routes, useParams, useLocation, Link } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -10,7 +10,7 @@ import Modules from "./Modules";
 
 import '../../index.css';
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const screenName = pathname.split('/').pop();
