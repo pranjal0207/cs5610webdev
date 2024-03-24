@@ -91,11 +91,13 @@ function Assignments() {
                 (assignment) => assignment.course === courseId)
               .map((assignment) => (
               <li className="list-group-item">
-                
+                <Link to={`/Kanbas/Courses/${courseId}/Assignments/new`}>
                 <button
                   onClick={() => dispatch(setAssignment(assignment))}>
                   Edit
                 </button>
+               </Link>
+                
               
                 <button
                   onClick={() => dispatch(deleteAssignment(assignment._id))}>
