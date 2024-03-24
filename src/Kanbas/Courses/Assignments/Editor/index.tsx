@@ -1,13 +1,11 @@
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setAssignment, addAssignment, updateAssignment } from "../reducer";
+import { setAssignment, addAssignment, updateAssignment } from "../assignmentsReducer";
 import { KanbasState } from "../../../store";
 
 function AssignmentEditor() {
   const assignmentList = useSelector((state: KanbasState) => 
     state.assignmentsReducer.assignments);
-
-  
   const dispatch = useDispatch();
   const { assignmentId } = useParams();
   const { courseId } = useParams();
@@ -21,10 +19,6 @@ function AssignmentEditor() {
     console.log(assignment)
    } 
 
-
-  // const assignment = useSelector((state: KanbasState) => 
-  // state.assignmentsReducer.assignment);
-  
 
   const aFrom = assignment.availableFromDate;
   const aUntil = assignment.availableUntilDate;
@@ -40,6 +34,7 @@ function AssignmentEditor() {
     }
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+
 
   return (
     <div className="me-5">
@@ -155,6 +150,5 @@ function AssignmentEditor() {
       </Link>
     </div>
 
-  )
-}
+  )};
 export default AssignmentEditor;

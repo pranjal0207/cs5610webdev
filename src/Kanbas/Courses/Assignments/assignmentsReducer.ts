@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {db} from "../../Database";
+import {assignments} from "../../Database";
+
 
 const initialState = {
-    assignments: db.assignments,
+    assignments: assignments,
     assignment: { 
         title: "",
         week: "",
