@@ -4,7 +4,7 @@ function ArrayStateVariable() {
   const addElement = () => {
     setArray([...array, Math.floor(Math.random() * 100)]);
   };
-  const deleteElement = (index: number) => {
+  const deleteElement = (index) => {
     setArray(array.filter((item, i) => i !== index));
   };
   return (
@@ -15,8 +15,7 @@ function ArrayStateVariable() {
         {array.map((item, index) => (
           <li key={index}>
             {item}
-            <button onClick={() => deleteElement(index)}>
-              Delete</button>
+            <button onClick={() => deleteElement(index)}>Delete</button>
           </li>
         ))}
       </ul>

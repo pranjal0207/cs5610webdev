@@ -1,11 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { add } from "./addReducer";
-import { LabState } from "../../../store";
 function AddRedux() {
   const [a, setA] = useState(12);
   const [b, setB] = useState(23);
-  const { sum } = useSelector((state: LabState) => state.addReducer);
+  const { sum } = useSelector((state) => state.addReducer);
   const dispatch = useDispatch();
   return (
     <div className="w-25">

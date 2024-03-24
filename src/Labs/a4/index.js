@@ -1,4 +1,4 @@
-import React from "react";
+import Add from "./Add";
 import ClickEvent from "./ClickEvent";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
@@ -12,28 +12,28 @@ import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import ReduxExamples from "./ReduxExamples";
 
+function Assignment4() {
+  function sayHello() {
+    alert("Hello");
+  }
 
-const Assignment4 = () => {
-    function sayHello() {
-        alert("Hello");
-      }
-    
-  return(
-    <>
+  return (
+    <div>
       <h1>Assignment 4</h1>
+      <Add a={1} b={2} />
       <ClickEvent />
       <PassingDataOnEvent />
-      <PassingFunctions theFunction={sayHello}/>
+      <PassingFunctions theFunction={sayHello} />
       <EventObject />
-      <Counter/>
-      <BooleanStateVariables/>
-      <StringStateVariables/>
-      <DateStateVariable/>
-      <ObjectStateVariable/>
-      <ArrayStateVariable/>
-      <ParentStateComponent/>
-      <ReduxExamples/>
-    </>
+      <Counter />
+      <BooleanStateVariables />
+      <StringStateVariables />
+      <DateStateVariable />
+      <ObjectStateVariable />
+      <ArrayStateVariable />
+      <ParentStateComponent />
+      <ReduxExamples />
+    </div>
   );
-};
+}
 export default Assignment4;

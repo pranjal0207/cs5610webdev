@@ -8,7 +8,8 @@ function StringStateVariables() {
       <input
         className="form-control"
         value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}/>
+        onChange={(e) => setFirstName(e.target.value)}
+      />
     </div>
   );
 }
