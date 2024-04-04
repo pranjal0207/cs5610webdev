@@ -2,10 +2,10 @@ import axios, { AxiosResponse } from "axios";
 import { IAssignment } from "../../Interfaces/assignment";
 
 const API_BASE = process.env.REACT_APP_API_BASE;
-const COURSES_API = "http://localhost:4000/api/courses";
-// const COURSES_API = `${API_BASE}/api/courses`;
-// const ASSIGNMENT_API = `${API_BASE}/api/assignments`;
-const ASSIGNMENT_API = `http://localhost:4000/api/assignments`;
+// const COURSES_API = "http://localhost:4000/api/courses";
+const COURSES_API = `${API_BASE}/api/courses`;
+const ASSIGNMENT_API = `${API_BASE}/api/assignments`;
+// const ASSIGNMENT_API = `http://localhost:4000/api/assignments`;
 
 export const fetchAssignmentsForCourse = async (courseId: any) => {
     const response: AxiosResponse<IAssignment[]> = await
