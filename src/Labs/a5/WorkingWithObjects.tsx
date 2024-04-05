@@ -6,14 +6,15 @@ function WorkingWithObjects() {
     description: "Create a NodeJS server with ExpressJS",
     due: "2021-10-10", completed: false, score: 0,
   });
-  const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const ASSIGNMENT_URL = `${API_BASE}/a5/assignment`;
   const [module, setModule] = useState({
     id: 2,
     name: "Test name",
     description: "Some description",
     course: "Test course"
   });
-  const MODULE_URL = "http://localhost:4000/a5/module";
+  const MODULE_URL = `${API_BASE}/a5/module`;
   const fetchAssignment = async () => {
     const response = await axios.get(`${ASSIGNMENT_URL}`);
     setAssignment(response.data);
@@ -49,18 +50,18 @@ function WorkingWithObjects() {
             title: e.target.value })}
         value={assignment.title}/>
       <h4>Retrieving Objects</h4>
-      <a href="http://localhost:4000/a5/assignment" className="btn btn-primary">
+      <a href={`${API_BASE}/a5/assignment`} className="btn btn-primary">
         Get Assignment
       </a>
       <h4>Retrieving Properties</h4>
-      <a href="http://localhost:4000/a5/assignment/title" className="btn btn-primary">
+      <a href={`${API_BASE}/a5/assignment/title`} className="btn btn-primary">
         Get Title
       </a>
       <h4>Module</h4>
-      <a href="http://localhost:4000/a5/module" className="btn btn-primary">
+      <a href={`${API_BASE}/a5/module`} className="btn btn-primary">
         Get Module
       </a>
-      <a href="http://localhost:4000/a5/module/name" className="btn btn-primary">
+      <a href={`${API_BASE}/a5/module/name`} className="btn btn-primary">
         Get Module Name
       </a>
       <h4>Modifying Properties</h4>
