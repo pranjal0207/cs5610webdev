@@ -15,7 +15,12 @@ export const signup = async (user: { username: string; password: string; }) => {
 };
 
 export const signin = async (credentials: User) => {
-  const response = await instance.post( `${USERS_API}/signin`, credentials );
+  const config = {
+    headers: {
+      "Access-Control-Allow-Credentials": true,
+    },
+  };
+  const response = await instance.post( `${USERS_API}/signin`, credentials, config );
   return response.data;
 };
 
