@@ -1,4 +1,5 @@
 import axios from "axios";
+// export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 export const BASE_API = "";
 export const USERS_API = `${BASE_API}/api/users`;
 
@@ -14,7 +15,6 @@ export const signup = async (user: { username: string; password: string; }) => {
 };
 
 export const signin = async (credentials: User) => {
-  console.log(credentials)
   const response = await instance.post( `${USERS_API}/signin`, credentials );
   return response.data;
 };

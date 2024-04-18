@@ -9,8 +9,7 @@ export default function Signin() {
   const navigate = useNavigate();
   const signin = async () => {
     const user = await client.signin(credentials);
-    console.log("user")
-    navigate("/Kanbas/Account/Profile", user);
+    navigate("/Kanbas/Account/Profile", {state: user});
   };
   return (
     <div>

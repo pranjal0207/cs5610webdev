@@ -2,8 +2,6 @@ import * as client from "./client";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 export default function Profile() {
-  // const [profile, setProfile] = useState({ username: "", password: "", 
-  //   firstName: "", lastName: "", dob: "", email: "", role: "USER" });
   const location = useLocation();
   const [profile, setProfile] = useState(location.state || {
     username: "", 
@@ -16,7 +14,6 @@ export default function Profile() {
   });
   const navigate = useNavigate();
   const fetchProfile = async () => {
-    console.log("gdfgs" + profile._id);
     const account = await client.profile(profile._id);
     setProfile(account);
   };
