@@ -24,14 +24,14 @@ export const signin = async (credentials: User) => {
   return response.data;
 };
 
-export const profile = async (id:string) => {
+export const profile = async (id:string, user:User) => {
     const config = {
       headers: {
         Cookie: `currentUser:${id}`,
       },
     };
 
-    const response = await instance.post(`${USERS_API}/profile`, {}, config);
+    const response = await instance.post(`${USERS_API}/profile`, {"currentUser":user}, config);
     return response.data;
   };
   

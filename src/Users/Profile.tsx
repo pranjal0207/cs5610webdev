@@ -14,7 +14,7 @@ export default function Profile() {
   });
   const navigate = useNavigate();
   const fetchProfile = async () => {
-    const account = await client.profile(profile._id);
+    const account = await client.profile(profile._id, profile);
     setProfile(account);
   };
   const save = async () => {
