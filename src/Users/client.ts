@@ -1,6 +1,6 @@
 import axios from "axios";
 // export const BASE_API = process.env.REACT_APP_BASE_API_URL;
-export const BASE_API = "";
+export const BASE_API = "https://kanbas-node-server-app-nolb.onrender.com";
 export const USERS_API = `${BASE_API}/api/users`;
 
 console.log(BASE_API);
